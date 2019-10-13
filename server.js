@@ -8,3 +8,7 @@ var PORT = process.env.PORT || 3002;
 app.listen(PORT, function() {
     console.log("Server listening on: http://localhost:" + PORT);
 });
+
+var routes = require('./routes/apiRoutes.js');
+app.use('/',routes);
+
