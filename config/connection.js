@@ -16,3 +16,7 @@ connection.connect(function(err){
     connection.end(); 
 
 })
+
+//make sure you export something
+
+//module.export = connection

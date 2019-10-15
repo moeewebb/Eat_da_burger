@@ -1,11 +1,11 @@
 module.exports = function(app){
     
     
-    app.get("/api/____", function(req, res){
-        res.json(____);
+    app.get("/home", function(req, res){
+       return res.render("index");
     });
 
-    app.get("api/_____", function(req, res){
-        res.json(______);
-    });
+    // app.get("/burger", function(req, res){
+    //     res.json(______);
+    // });
 }
