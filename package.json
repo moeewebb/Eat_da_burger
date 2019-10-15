@@ -1,0 +1,27 @@
+{
+  "name": "Eat_da_Burger",
+  "version": "1.0.0",
+  "description": "The user will have the opportunity to pick the burger and once selected it will be added to the list.  MySQL will log the information from each user .",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moeewebb/Eat_da_burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moeewebb/Eat_da_burger/issues"
+  },
+  "homepage": "https://github.com/moeewebb/Eat_da_burger#readme"
+}
