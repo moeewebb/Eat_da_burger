@@ -1,9 +1,9 @@
 var express = require("express");
 var app = express();
 var exphbs = require("express-handlebars"); 
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8087;
+var PORT = process.env.PORT || 8085;
 
 // Sets up the Express app to handle data parsing
 app.use(express.static("public"));
@@ -19,6 +19,7 @@ app.set("view engine", "handlebars");
 //require("./routes/apiRoutes")(app);
 
 app.get("/", function(req, res){
+  //res.render("index", {burgers: burgers});
   res.render("index");
 });
 
