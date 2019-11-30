@@ -6,22 +6,16 @@ app.use(express.static('public'));
 var PORT = process.env.PORT || 8085;
 
 // Sets up the Express app to handle data parsing
-app.use(express.static("public"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// require("./routes/htmlRoutes.js")(app);
-//var routes = require('/routes/apiRoutes.js');
-//app.use('/', apiRoutes);
-//require("./routes/apiRoutes")(app);
 
-app.get("/", function(req, res){
-  //res.render("index", {burgers: burgers});
-  res.render("index");
-});
+var routes = require('./controllers/burgercontroller.js')
+app.use(routes);
 
 
 
