@@ -4,7 +4,7 @@
   "description": "The user will have the opportunity to pick the burger and once selected it will be added to the list.  MySQL will log the information from each user .",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1"
   },
